@@ -1,0 +1,15 @@
+using System;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.UI;
+
+[System.Serializable]
+public class itemdata 
+{
+    public Image itemImage;
+    public GameObject obj;
+    public string itemName  ,itemDescription;
+    public float Weight, damage;
+    public int maxStack;
+    public bool Weapon, throwable, shootable;
+}
