@@ -1,0 +1,91 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AStarMazeSolver
+{
+    private List<Vector3> walls;
+    private Vector3 startPos;
+    private Vector3 endPos;
+
+    private Dictionary<Vector3, float> gScore;
+    private Dictionary<Vector3, float> fScore;
+    private Dictionary<Vector3, Vector3> previousNode;
+
+    public List<Vector3> Solve(List<Vector3> walls, Vector3 startPos, Vector3 endPos)
+    {
+        this.walls = walls;
+        this.startPos = startPos;
+        this.endPos = endPos;
+
+        gScore = new Dictionary<Vector3, float>();
+        fScore = new Dictionary<Vector3, float>();
+        previousNode = new Dictionary<Vector3, Vector3>();
+
+        List<Vector3> openSet = new List<Vector3>();
+        HashSet<Vector3> closedSet = new HashSet<Vector3>();
+
+        openSet.Add(startPos);
+        gScore[startPos] = 0;
+        fScore[startPos] = Vector3.Distance(startPos, endPos);
+
+        while (openSet.Count > 0)
+        {
+            Vector3 currentNode = GetLowestFScoreNode(openSet);
+            if (currentNode == endPos)
+                return GetPath();
+
+            openSet.Remove(currentNode);
+            closedSet.Add(currentNode);
+
+            foreach (Vector3 neighbor in GetNeighbors(currentNode))
+            {
+                if (closedSet.Contains(neighbor))
+                    continue;
+
+                float tentativeGScore = gScore[currentNode] + Vector3.Distance(currentNode, neighbor);
+                if (!openSet.Contains(neighbor))
+                {
+                    openSet.Add(neighbor);
+                }
+                else if (tentativeGScore >= gScore[neighbor])
+                {
+                    continue;
+                }
+
+                previousNode[neighbor] = currentNode;
+                gScore[neighbor] = tentativeGScore;
+                fScore[neighbor] = gScore[neighbor] + Vector3.Distance(neighbor, endPos);
+            }
+        }
+
+        return new List<Vector3>();
+    }
+
+    private Vector3 GetLowestFScoreNode(List<Vector3> openSet)
+    {
+        Vector3 closestNode = openSet[0];
+        float closestDistance = fScore[closestNode];
+        foreach (Vector3 node in openSet)
+        {
+            if (fScore[node] < closestDistance)
+            {
+                closestNode = node;
+                closestDistance = fScore[node];
+            }
+        }
+        return closestNode;
+    }
+
+    private List<Vector3> GetNeighbors(Vector3 node)
+    {
+        List<Vector3> neighbors = new List<Vector3>();
+        foreach (Vector3 wall in walls)
+        {
+            if (Vector3.Distance(node, wall) == 1)
+                neighbors.Add(wall);
+        }
+        return neighbors;
+    }
+
+    private List<Vector3> Get

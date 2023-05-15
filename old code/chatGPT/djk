@@ -1,0 +1,217 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DijkstraMazeSolver
+{
+    private List<Vector3> walls;
+    private Vector3 startPos;
+    private Vector3 endPos;
+    private Dictionary<Vector3, float> distance; //store the distance of 
+    private Dictionary<Vector3, Vector3> previousNode; //store Vector3preNode in MazeCellVector3
+    private List<Vector3> unvisitedNodes;
+
+    public DijkstraMazeSolver(List<Vector3> walls, Vector3 startPos, Vector3 endPos)
+    {
+        this.walls = walls;
+        this.startPos = startPos;
+        this.endPos = endPos;
+        distance = new Dictionary<Vector3, float>(); //djkmincost
+        previousNode = new Dictionary<Vector3, Vector3>(); //djkpervious
+        unvisitedNodes = new List<Vector3>(); //djkvisited
+    }
+
+    public List<Vector3> Solve()
+    {
+        // // initialize distance and previousNode dictionaries
+        // foreach (Vector3 node in walls)
+        // {
+        //     distance[node] = float.MaxValue;
+        //     previousNode[node] = Vector3.negativeInfinity;
+        //     unvisitedNodes.Add(node);
+        // }
+
+        // set starting node distance to 0
+        // distance[startPos] = 0;
+
+ //get closet note
+            Vector3 currentNode = closestNode;
+
+            // remove current node from unvisitedcell
+            unvisitedcell.Remove(currentNode);
+
+            // if the current node is the end node, break the loop
+            if (currentNode == endPos)
+                break;
+
+            // get all the neighboring nodes of the current node
+            List<Vector3> neighbors = GetNeighbors(currentNode);
+
+            // loop through each neighbor and update its distance if necessary
+            foreach (Vector3 neighbor in neighbors)
+            {
+                float tentativeDistance = distance[currentNode] + Vector3.Distance(currentNode, neighbor);
+                if (tentativeDistance < distance[neighbor])
+                {
+                    distance[neighbor] = tentativeDistance;
+                    previousNode[neighbor] = currentNode;
+                }
+            }
+
+
+
+
+
+      
+
+        // return the list of nodes from start to end
+        return GetPath();
+    }
+
+    // private List<Vector3> GetNeighbors(Vector3 node)
+    // {
+    //     List<Vector3> neighbors = new List<Vector3>();
+    //     foreach (Vector3 wall in walls)
+    //     {
+    //         if (Vector3.Distance(node, wall) == 1)
+    //             neighbors.Add(wall);
+    //     }
+    //     return neighbors;
+    // }
+
+       private List<Vector3> GetPath()
+    {
+        List<Vector3> path = new List<Vector3>();
+        Vector3 currentNode = endPos;
+        while (currentNode != startPos)
+        {
+            path.Add(currentNode);
+            currentNode = previousNode[currentNode];
+        }
+        path.Add(startPos);
+        path.Reverse();
+        return path;
+    }
+}
+
+ // void setup1()
+    // {
+    //     sizeX = cell.GetLength(0);
+    //     sizeY = cell.GetLength(1);
+    //     
+    //     for (int x = 0; x < cell.GetLength(0) - 1; x++)
+    //     {   
+    //         for (int y = 0; y < cell.GetLength(1) - 1; y++)
+    //         {
+    //             Mazecell current = cell[x, y];
+    //             if (x == 0)  current.djkdir[0] = false; //up
+    //             if (x == sizeX - 1) current.djkdir[1] = false;//down
+    //             if (y == 0) current.djkdir[2] = false; //left
+    //             if (y == sizeY - 1) current.djkdir[3] = false;//right
+    //         
+    //             if (!current.djkdir[0]) {//up
+    //                 Debug.Log("up");
+    //                 current.djkdir[4] = false;
+    //                 current.djkdir[5] = false;
+    //             } if (!current.djkdir[1]) {//down
+    //                 Debug.Log("d");
+    //                 current.djkdir[6] = false;
+    //                 current.djkdir[7] = false;
+    //             } if (!current.djkdir[2]) {//left
+    //                 Debug.Log("l");
+    //                 current.djkdir[4] = false;
+    //                 current.djkdir[6] = false;
+    //             } if (!current.djkdir[3]) {//right
+    //                 Debug.Log("r");
+    //                 current.djkdir[5] = false;
+    //                 current.djkdir[7] = false;
+    //             }
+    //         }
+    //     }
+    // }
+    //    
+    
+    }
+    // private List<Vector2> startsearch(int startx, int starty, int endx, int endy) {
+    //     setup1();
+    //     bool nextnode = true, searchdirection = true;
+    //     float mincost = float.MaxValue;
+        while (nextnode) {
+            nextnode = false;
+            for (int i = 0; i < sizeX; i++) {
+                for (int j = 0; j < sizeY; j++) {
+                    if (cell[i, j].djkmincost < mincost && !cell[i,j].djkvisited) {
+                        mincost = cell[i, j].djkmincost;
+                        currX = i;
+                        currY = j;
+                    }
+                }
+            }
+            while (searchdirection) {
+                searchdirection = false;
+                
+                List<int> index  = new List<int>();
+                for (int i = 0; i < cell[currX,currY].djkdir.Length; i++)
+                {
+                    if (cell[currX, currY].djkdir[i])
+                    {
+                        index.Add(i);
+                        searchdirection = true;
+                    }
+                }
+    
+                if (cell[currX, currY].djkdir.Length != 0)
+                {
+                    foreach (var VARIABLE in index)
+    //                 {
+    //                     Debug.Log(VARIABLE); }Debug.Log(index[0]);
+    //                 switch (index[0])
+    //                 {
+    //                     case 0: obcheck(currX-1, currY, currX, currY, false, cell[currX, currY].djkmincost); break;
+    //                     case 1: obcheck(currX+1, currY, currX, currY, false, cell[currX, currY].djkmincost); break;
+    //                     case 2: obcheck(currX, currY-1, currX, currY, false, cell[currX, currY].djkmincost); break;
+    //                     case 3: obcheck(currX, currY+1, currX, currY, false, cell[currX, currY].djkmincost); break;
+    //                     case 4: obcheck(currX-1, currY-1, currX, currY, true, cell[currX, currY].djkmincost); break;
+    //                     case 5: obcheck(currX-1, currY+1, currX, currY, true, cell[currX, currY].djkmincost); break;
+    //                     case 6: obcheck(currX+1, currY-1, currX, currY, true, cell[currX, currY].djkmincost); break;
+    //                     case 7: obcheck(currX+1, currY+1, currX, currY, true, cell[currX, currY].djkmincost); break;
+    //                 }
+    //                 index.RemoveAt(0);
+                }
+                if (!searchdirection) cell[currX, currY].djkvisited = true;
+            }
+    
+            if (cell[endx, endy] != cell[currX, currY]) nextnode = true;
+        }
+    
+        List<Vector2> retunval = new List<Vector2>();
+        retunval.Add(cell[endx,endy].djkprevious);
+        while (retunval[-1].x != startx && retunval[-1].y != starty) {
+            retunval.Add(cell[(int)(retunval[-1].x),(int)(retunval[-1].y)].djkprevious);
+        }
+        return retunval;
+    }
+    
+    void obcheck(int x, int y, int currX, int currY ,bool oblique, float currentcost) {
+        if (oblique) currentcost += 14;else currentcost += 10;
+        if (cell[x, y].djkmincost > currentcost)
+        {
+            cell[x, y].djkprevious = new Vector2(currX, currY);
+            cell[x, y].djkmincost = currentcost;
+        }
+    
+    }
+    private void calcost(w,h){
+            if(walkable && !visited){
+                newcost = nodes[prevx, prevy].cost + cost
+                if(newcost < nodes[w,h].cost){
+                    nodes[prevx,prevy].prev = 
+                    nodes[w,h].cost = newcost
+                }
+            }
+            
+        }
+}// foreach (var item in cell)
+// {
+//     if (item.djkvisited = false) nextnode = true;
+// }

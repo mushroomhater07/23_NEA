@@ -1,0 +1,50 @@
+// GameObject wall = Resources.Load<GameObject>("Maze/wall");
+        // Vector3 centerPoint = Vector3.zero;
+        // float rotationSpeed = 5f;
+        // for (int i = 1; i < 37; i++)
+        // {
+        //     GameObject instantiateWall = Instantiate(wall, GameObject.Find("outerWall").transform);
+        //     instantiateWall.name = $"outerWall{i}";
+        //     instantiateWall.transform.localScale = new Vector3(20, 1, 1);
+        //     instantiateWall.transform.position = new Vector3(150f - (150f / 36 * i), 0, 150f / 36 * i);
+        //     Debug.Log(150f- (150f /i));
+        //     instantiateWall.transform.RotateAround(centerPoint, Vector3.up, 180/36*i);
+        // }
+        // Vector3[] exitpos = new Vector3[4]
+        // {
+        //     new Vector3(-4, 3.75f, 166.8f), new Vector3(4, 3.75f, 166.8f), new Vector3(0, 7.5f, 166.8f),
+        //     new Vector3(0, 0, 166.8f)
+        // };
+        // Vector3[] exitrotate = { new Vector3(0, 0, 90),new Vector3(0, 0, 90),Vector3.zero,Vector3.zero};
+        // Vector3[] exitscale = {
+        //     new Vector3(8, 0.01f, 50), new Vector3(8, 0.01f, 50), new Vector3(8, 0.01f, 50), new Vector3(8, 0.01f, 50)
+        // };
+        
+        // for (int i = 0; i < 4; i++)
+        // {
+        //     GameObject escape = Instantiate(Resources.Load<GameObject>("Cube"));
+        //     escape.transform.position = exitpos[i];
+        //     escape.transform.localScale = exitscale[i];
+        //     escape.transform.rotation = Quaternion.Euler(exitrotate[i]);
+        //     escape.name = $"escapetunnel{i}";
+        //     escape.transform.parent = escapeGp.transform;
+        // }
+        
+        // left shift (<<) to pick a bit
+        // bitwise OR (|) to enable certain bits of a mask
+        //     bitwise AND (&) to disable certain bits of a mask
+        //     bitwise NOT (~) to negate a mask
+
+                         
+        // inven = FindObjectOfType<Inventory>();
+        // inven.Setup(character[currentselection].InventorySize);
+        // Button backpack = GameObject.Find("InvenButton").GetComponent<Button>();
+        // backpack.onClick.AddListener(delegate { inven.ShowHide(true); });
+
+        //add a camera and attach to the main player        
+        //UI
+
+        for (int i = 0; i < 8; i++)
+        {
+            
+        }

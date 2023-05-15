@@ -1,0 +1,64 @@
+using UnityEngine;
+using System.Collections.Generic;
+
+public class Maze
+{
+    public int[,] Walls;
+    public Vector2Int StartPos;
+    public Vector2Int EndPos;
+
+    public Maze(int[,] walls, Vector2Int startPos, Vector2Int endPos)
+    {
+        Walls = walls;
+        StartPos = startPos;
+        EndPos = endPos;
+    }
+}
+
+public class AStar
+{
+    private Maze maze;
+    private Vector2Int[] directions = { new Vector2Int(0, 1), new Vector2Int(1, 0), new Vector2Int(0, -1), new Vector2Int(-1, 0) };
+
+    public AStar(Maze maze)
+    {
+        this.maze = maze;
+    }
+
+    public List<Vector2Int> Solve()
+    {
+        Queue<Vector2Int> openList = new Queue<Vector2Int>();
+        HashSet<Vector2Int> closedList = new HashSet<Vector2Int>();
+        Dictionary<Vector2Int, Vector2Int> cameFrom = new Dictionary<Vector2Int, Vector2Int>();
+        Dictionary<Vector2Int, int> gScore = new Dictionary<Vector2Int, int>();
+        Dictionary<Vector2Int, int> fScore = new Dictionary<Vector2Int, int>();
+
+        openList.Enqueue(maze.StartPos);
+        gScore[maze.StartPos] = 0;
+        fScore[maze.StartPos] = gScore[maze.StartPos] + HeuristicCostEstimate(maze.StartPos, maze.EndPos);
+
+        while (openList.Count > 0)
+        {
+            Vector2Int current = GetLowestFScore(openList, fScore);
+            if (current == maze.EndPos)
+            {
+                return ReconstructPath(cameFrom, current);
+            }
+
+            openList.Dequeue();
+            closedList.Add(current);
+
+            foreach (Vector2Int direction in directions)
+            {
+                Vector2Int neighbor = current + direction;
+                if (neighbor.x < 0 || neighbor.x >= maze.Walls.GetLength(0) || neighbor.y < 0 || neighbor.y >= maze.Walls.GetLength(1) || maze.Walls[neighbor.x, neighbor.y] == 1 || closedList.Contains(neighbor))
+                {
+                    continue;
+                }
+
+                int tentativeGScore = gScore[current] + 1;
+                if (!openList.Contains(neighbor) || tentativeGScore < gScore[neighbor])
+                {
+                    cameFrom[neighbor] = current;
+                    gScore[neighbor] = tentativeGScore;
+                    fScore[neighbor] = gScore[neighbor]

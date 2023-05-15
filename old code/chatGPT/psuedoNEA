@@ -1,0 +1,21 @@
+settinh menu panel()
+on quit button clickaed(){
+    to json
+}
+touch  and on hold to shoot
+when button click(){}
+
+check current weapon or tools
+if (traps){
+    instainate (on floor)
+}
+(weapon){
+    (shootable)
+}
+if(med kit){
+
+}
+
+on slotbutton clicck{
+    change currrent weapon
+}

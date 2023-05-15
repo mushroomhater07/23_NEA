@@ -1,0 +1,35 @@
+using UnityEngine;
+using UnityEngine.EventSystems;
+
+public class InventorySlot : MonoBehaviour, IDragHandler, IEndDragHandler
+{
+    private RectTransform rectTransform;
+    private Canvas canvas;
+    private Vector2 originalPosition;
+
+    private void Awake()
+    {
+        rectTransform = GetComponent<RectTransform>();
+        canvas = GetComponentInParent<Canvas>();
+        originalPosition = rectTransform.anchoredPosition;
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        rectTransform.anchoredPosition = originalPosition;
+    }
+
+    public void OnPointerDown(PointerEventData eventData)//Touch Detector
+    {
+        Vector2 localTouchPosition;
+        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform, eventData.position, eventData.pressEventCamera, out localTouchPosition))
+        {
+            Debug.Log("Touch position inside rect transform: " + localTouchPosition);
+        }
+    }
+}

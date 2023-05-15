@@ -1,0 +1,4 @@
+rigidbody 2D for physic/gravity
+collider for making it solid and able to add physic file
+trigger dont collide but trigger when touch
+Unity unit: screen is 800px and mouse move to 400px, 1/2
