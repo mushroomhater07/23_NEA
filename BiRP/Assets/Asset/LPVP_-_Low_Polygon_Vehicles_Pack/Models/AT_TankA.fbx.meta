@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: ea01bbb263674184bad63fdafce8d0ef
+timeCreated: 1466587737
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: TankATurret
+    100004: WheelLA
+    100006: WheelLB
+    100008: WheelLC
+    100010: WheelLD
+    100012: WheelLE
+    100014: WheelLF
+    100016: WheelLG
+    100018: WheelLH
+    100020: WheelLI
+    100022: WheelRA
+    100024: WheelRB
+    100026: WheelRC
+    100028: WheelRD
+    100030: WheelRE
+    100032: WheelRF
+    100034: WheelRG
+    100036: WheelRH
+    100038: WheelRI
+    400000: //RootNode
+    400002: TankATurret
+    400004: WheelLA
+    400006: WheelLB
+    400008: WheelLC
+    400010: WheelLD
+    400012: WheelLE
+    400014: WheelLF
+    400016: WheelLG
+    400018: WheelLH
+    400020: WheelLI
+    400022: WheelRA
+    400024: WheelRB
+    400026: WheelRC
+    400028: WheelRD
+    400030: WheelRE
+    400032: WheelRF
+    400034: WheelRG
+    400036: WheelRH
+    400038: WheelRI
+    2300000: //RootNode
+    2300002: TankATurret
+    2300004: WheelLA
+    2300006: WheelLB
+    2300008: WheelLC
+    2300010: WheelLD
+    2300012: WheelLE
+    2300014: WheelLF
+    2300016: WheelLG
+    2300018: WheelLH
+    2300020: WheelLI
+    2300022: WheelRA
+    2300024: WheelRB
+    2300026: WheelRC
+    2300028: WheelRD
+    2300030: WheelRE
+    2300032: WheelRF
+    2300034: WheelRG
+    2300036: WheelRH
+    2300038: WheelRI
+    3300000: //RootNode
+    3300002: TankATurret
+    3300004: WheelLA
+    3300006: WheelLB
+    3300008: WheelLC
+    3300010: WheelLD
+    3300012: WheelLE
+    3300014: WheelLF
+    3300016: WheelLG
+    3300018: WheelLH
+    3300020: WheelLI
+    3300022: WheelRA
+    3300024: WheelRB
+    3300026: WheelRC
+    3300028: WheelRD
+    3300030: WheelRE
+    3300032: WheelRF
+    3300034: WheelRG
+    3300036: WheelRH
+    3300038: WheelRI
+    4300000: AT_TankA
+    4300002: TankATurret
+    4300004: WheelRA
+    4300006: WheelRB
+    4300008: WheelRC
+    4300010: WheelRD
+    4300012: WheelRE
+    4300014: WheelRF
+    4300016: WheelRG
+    4300018: WheelRH
+    4300020: WheelRI
+    4300022: WheelLI
+    4300024: WheelLH
+    4300026: WheelLG
+    4300028: WheelLF
+    4300030: WheelLE
+    4300032: WheelLD
+    4300034: WheelLC
+    4300036: WheelLB
+    4300038: WheelLA
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

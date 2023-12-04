@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: a7653d6a9452e2144a0aeec0d78d9b32
+timeCreated: 1466325464
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: TrainWheelBL
+    100004: TrainWheelBR
+    100006: TrainWheelFL
+    100008: TrainWheelFR
+    100010: WheelABL
+    100012: WheelABR
+    100014: WheelAFL
+    100016: WheelAFR
+    100018: WheelBBL
+    100020: WheelBBR
+    100022: WheelBFL
+    100024: WheelBFR
+    400000: //RootNode
+    400002: TrainWheelBL
+    400004: TrainWheelBR
+    400006: TrainWheelFL
+    400008: TrainWheelFR
+    400010: WheelABL
+    400012: WheelABR
+    400014: WheelAFL
+    400016: WheelAFR
+    400018: WheelBBL
+    400020: WheelBBR
+    400022: WheelBFL
+    400024: WheelBFR
+    2300000: //RootNode
+    2300002: TrainWheelBL
+    2300004: TrainWheelBR
+    2300006: TrainWheelFL
+    2300008: TrainWheelFR
+    2300010: WheelABL
+    2300012: WheelABR
+    2300014: WheelAFL
+    2300016: WheelAFR
+    2300018: WheelBBL
+    2300020: WheelBBR
+    2300022: WheelBFL
+    2300024: WheelBFR
+    3300000: //RootNode
+    3300002: TrainWheelBL
+    3300004: TrainWheelBR
+    3300006: TrainWheelFL
+    3300008: TrainWheelFR
+    3300010: WheelABL
+    3300012: WheelABR
+    3300014: WheelAFL
+    3300016: WheelAFR
+    3300018: WheelBBL
+    3300020: WheelBBR
+    3300022: WheelBFL
+    3300024: WheelBFR
+    4300000: TrainBCartPassager
+    4300002: TrainWheelFL
+    4300004: WheelAFL
+    4300006: WheelBFL
+    4300008: TrainWheelBL
+    4300010: WheelABL
+    4300012: WheelBBL
+    4300014: TrainWheelBR
+    4300016: WheelABR
+    4300018: WheelBBR
+    4300020: TrainWheelFR
+    4300022: WheelAFR
+    4300024: WheelBFR
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

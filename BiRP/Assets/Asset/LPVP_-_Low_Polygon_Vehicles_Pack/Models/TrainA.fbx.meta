@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 2bc28859922303f49883311dfa203b3e
+timeCreated: 1465898834
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: TrainWheelBL
+    100004: TrainWheelBR
+    100006: TrainWheelFL
+    100008: TrainWheelFR
+    100010: WheelA
+    100012: WheelA 1
+    100014: WheelA 2
+    100016: WheelA 3
+    100018: WheelB
+    100020: WheelB 1
+    100022: WheelB 2
+    100024: WheelB 3
+    100026: WheelABL
+    100028: WheelABR
+    100030: WheelAFL
+    100032: WheelAFR
+    100034: WheelBBL
+    100036: WheelBBR
+    100038: WheelBFL
+    100040: WheelBFR
+    400000: //RootNode
+    400002: TrainWheelBL
+    400004: TrainWheelBR
+    400006: TrainWheelFL
+    400008: TrainWheelFR
+    400010: WheelA
+    400012: WheelA 1
+    400014: WheelA 2
+    400016: WheelA 3
+    400018: WheelB
+    400020: WheelB 1
+    400022: WheelB 2
+    400024: WheelB 3
+    400026: WheelABL
+    400028: WheelABR
+    400030: WheelAFL
+    400032: WheelAFR
+    400034: WheelBBL
+    400036: WheelBBR
+    400038: WheelBFL
+    400040: WheelBFR
+    2300000: //RootNode
+    2300002: TrainWheelBL
+    2300004: TrainWheelBR
+    2300006: TrainWheelFL
+    2300008: TrainWheelFR
+    2300010: WheelA
+    2300012: WheelA 1
+    2300014: WheelA 2
+    2300016: WheelA 3
+    2300018: WheelB
+    2300020: WheelB 1
+    2300022: WheelB 2
+    2300024: WheelB 3
+    2300026: WheelABL
+    2300028: WheelABR
+    2300030: WheelAFL
+    2300032: WheelAFR
+    2300034: WheelBBL
+    2300036: WheelBBR
+    2300038: WheelBFL
+    2300040: WheelBFR
+    3300000: //RootNode
+    3300002: TrainWheelBL
+    3300004: TrainWheelBR
+    3300006: TrainWheelFL
+    3300008: TrainWheelFR
+    3300010: WheelA
+    3300012: WheelA 1
+    3300014: WheelA 2
+    3300016: WheelA 3
+    3300018: WheelB
+    3300020: WheelB 1
+    3300022: WheelB 2
+    3300024: WheelB 3
+    3300026: WheelABL
+    3300028: WheelABR
+    3300030: WheelAFL
+    3300032: WheelAFR
+    3300034: WheelBBL
+    3300036: WheelBBR
+    3300038: WheelBFL
+    3300040: WheelBFR
+    4300000: TrainA
+    4300002: TrainWheelFL
+    4300004: WheelA
+    4300006: WheelB
+    4300008: TrainWheelBL
+    4300010: WheelA
+    4300012: WheelB
+    4300014: TrainWheelBR
+    4300016: WheelA
+    4300018: WheelB
+    4300020: TrainWheelFR
+    4300022: WheelA
+    4300024: WheelB
+    4300026: WheelAFL
+    4300028: WheelBFL
+    4300030: WheelABL
+    4300032: WheelBBL
+    4300034: WheelABR
+    4300036: WheelBBR
+    4300038: WheelAFR
+    4300040: WheelBFR
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

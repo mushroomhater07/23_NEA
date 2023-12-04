@@ -1,0 +1,101 @@
+fileFormatVersion: 2
+guid: f8e129e3e50f23c4bae41414f1aa4c99
+timeCreated: 1465822231
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: TireLX
+    100002: TireLY
+    100004: TireRX
+    100006: TireRY
+    100008: //RootNode
+    100010: TruckTrailerPivots
+    400000: TireLX
+    400002: TireLY
+    400004: TireRX
+    400006: TireRY
+    400008: //RootNode
+    400010: TruckTrailerPivots
+    2300000: TireLX
+    2300002: TireLY
+    2300004: TireRX
+    2300006: TireRY
+    2300008: //RootNode
+    2300010: TruckTrailerPivots
+    3300000: TireLX
+    3300002: TireLY
+    3300004: TireRX
+    3300006: TireRY
+    3300008: //RootNode
+    3300010: TruckTrailerPivots
+    4300000: TruckTrailerC
+    4300002: TireRX
+    4300004: TireRY
+    4300006: TireLY
+    4300008: TireLX
+    4300010: TruckTrailerPivots
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

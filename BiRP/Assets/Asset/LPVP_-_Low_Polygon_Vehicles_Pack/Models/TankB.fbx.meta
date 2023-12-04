@@ -1,0 +1,151 @@
+fileFormatVersion: 2
+guid: f1772f598834b6544b9f5923c0187316
+timeCreated: 1465991177
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: WheelLA
+    100004: WheelLB
+    100006: WheelLC
+    100008: WheelLD
+    100010: WheelLE
+    100012: WheelLF
+    100014: WheelLG
+    100016: WheelRA
+    100018: WheelRB
+    100020: WheelRC
+    100022: WheelRD
+    100024: WheelRE
+    100026: WheelRF
+    100028: WheelRG
+    100030: TankBTurret
+    400000: //RootNode
+    400002: WheelLA
+    400004: WheelLB
+    400006: WheelLC
+    400008: WheelLD
+    400010: WheelLE
+    400012: WheelLF
+    400014: WheelLG
+    400016: WheelRA
+    400018: WheelRB
+    400020: WheelRC
+    400022: WheelRD
+    400024: WheelRE
+    400026: WheelRF
+    400028: WheelRG
+    400030: TankBTurret
+    2300000: //RootNode
+    2300002: WheelLA
+    2300004: WheelLB
+    2300006: WheelLC
+    2300008: WheelLD
+    2300010: WheelLE
+    2300012: WheelLF
+    2300014: WheelLG
+    2300016: WheelRA
+    2300018: WheelRB
+    2300020: WheelRC
+    2300022: WheelRD
+    2300024: WheelRE
+    2300026: WheelRF
+    2300028: WheelRG
+    2300030: TankBTurret
+    3300000: //RootNode
+    3300002: WheelLA
+    3300004: WheelLB
+    3300006: WheelLC
+    3300008: WheelLD
+    3300010: WheelLE
+    3300012: WheelLF
+    3300014: WheelLG
+    3300016: WheelRA
+    3300018: WheelRB
+    3300020: WheelRC
+    3300022: WheelRD
+    3300024: WheelRE
+    3300026: WheelRF
+    3300028: WheelRG
+    3300030: TankBTurret
+    4300000: TankB
+    4300002: WheelLG
+    4300004: WheelLA
+    4300006: WheelLB
+    4300008: WheelLC
+    4300010: WheelLD
+    4300012: WheelLE
+    4300014: WheelLF
+    4300016: WheelRF
+    4300018: WheelRE
+    4300020: WheelRD
+    4300022: WheelRC
+    4300024: WheelRB
+    4300026: WheelRA
+    4300028: WheelRG
+    4300030: TankBTurret
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

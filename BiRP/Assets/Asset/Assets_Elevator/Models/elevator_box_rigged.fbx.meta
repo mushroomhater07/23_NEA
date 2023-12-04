@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 7421b43733560844d821bfe6cf2e4476
+timeCreated: 1503808846
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: cable_end_BOTTOM
+    100002: cable_end_TOP
+    100004: cable_ROOT
+    100006: cablewires
+    100008: elevator_box
+    100010: //RootNode
+    100012: elevator_car_ROOT
+    100014: elevator_door_left
+    100016: elevator_door_right
+    100018: emergency_hatch
+    100020: floor_frame_1
+    100022: frame_door_left
+    100024: frame_door_right
+    100026: frame_ROOT
+    100028: joint12
+    100030: joint14
+    100032: joint16
+    100034: joint18
+    100036: joint2
+    100038: joint20
+    100040: joint22
+    100042: joint24
+    100044: joint26
+    100046: joint28
+    100048: joint30
+    100050: joint4
+    100052: joint6
+    100054: joint6 1
+    100056: joint9
+    100058: joint9 1
+    100060: pulley_1
+    100062: pulley_2
+    100064: pulley_3
+    100066: pulley_4
+    100068: weight_wheel
+    100070: weights
+    400000: cable_end_BOTTOM
+    400002: cable_end_TOP
+    400004: cable_ROOT
+    400006: cablewires
+    400008: elevator_box
+    400010: //RootNode
+    400012: elevator_car_ROOT
+    400014: elevator_door_left
+    400016: elevator_door_right
+    400018: emergency_hatch
+    400020: floor_frame_1
+    400022: frame_door_left
+    400024: frame_door_right
+    400026: frame_ROOT
+    400028: joint12
+    400030: joint14
+    400032: joint16
+    400034: joint18
+    400036: joint2
+    400038: joint20
+    400040: joint22
+    400042: joint24
+    400044: joint26
+    400046: joint28
+    400048: joint30
+    400050: joint4
+    400052: joint6
+    400054: joint6 1
+    400056: joint9
+    400058: joint9 1
+    400060: pulley_1
+    400062: pulley_2
+    400064: pulley_3
+    400066: pulley_4
+    400068: weight_wheel
+    400070: weights
+    4300000: cablewires
+    4300002: elevator_box
+    4300004: floor_frame_1
+    9500000: //RootNode
+    13700000: cablewires
+    13700002: elevator_box
+    13700004: floor_frame_1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
