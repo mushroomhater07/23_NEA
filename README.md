@@ -1,2 +1,4 @@
-# Maze Runner - Unity 3D mobile game
+# Maze Runner 
+
+## Unity 3D mobile game
 ---
